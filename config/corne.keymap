@@ -10,6 +10,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        hyper {
+            bindings = <&kp LS(LA(LC(LEFT_GUI)))>;
+            key-positions = <38 39>;
+        };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <37 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
